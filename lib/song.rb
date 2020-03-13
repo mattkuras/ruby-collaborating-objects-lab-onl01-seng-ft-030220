@@ -20,7 +20,7 @@ class Song
     song = self.new(song_info[1])
   #  binding.pry 
     Artist.new(song_info[0])
-    binding.pry 
+   # binding.pry 
     
   end
   

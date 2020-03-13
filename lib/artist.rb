@@ -24,8 +24,9 @@ class Artist
    end
    
    def self.find_or_create_by_name(string)
+      binding.pry
       Artist.all.each do |artist|
-        binding.pry
+       
        if artist.name == string
          return artist 
        else

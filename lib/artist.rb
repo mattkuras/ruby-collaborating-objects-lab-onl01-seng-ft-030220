@@ -31,8 +31,9 @@ class Artist
          return artist 
          binding.pry
        end
-         self.new(string)
+        
    end
+    self.new(string)
   end 
      
 

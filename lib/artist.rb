@@ -33,7 +33,11 @@ class Artist
        end
    end
     self.new(string)
-  end 
+  end
+  
+  def print_songs
+    puts self.songs
+  end
      
 
     

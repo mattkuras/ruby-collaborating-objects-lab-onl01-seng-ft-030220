@@ -18,7 +18,7 @@ class Song
     song_info = filename.chomp(".mp3").split(" - ")
    # binding.pry 
     song = self.new(song_info[1])
-    binding.pry 
+  #  binding.pry 
     Artist.new(song_info[0])
 
     

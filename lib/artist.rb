@@ -29,10 +29,9 @@ class Artist
        
        if artist && artist.name == string
          return artist 
-       else
          binding.pry
+       end
          self.new(string)
-     end
    end
   end 
      

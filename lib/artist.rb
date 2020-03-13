@@ -28,9 +28,9 @@ class Artist
       Artist.all.each do |artist|
        
        if artist && artist.name == string
-          binding.pry
          return artist 
        else
+         binding.pry
          self.new(string)
      end
    end

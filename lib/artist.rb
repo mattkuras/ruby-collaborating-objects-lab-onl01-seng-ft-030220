@@ -27,11 +27,10 @@ class Artist
      
       Artist.all.each do |artist|
        
-       if artist && artist.name == string
+       if artist.name == string
          return artist 
          binding.pry
        end
-        
    end
     self.new(string)
   end 

@@ -18,12 +18,14 @@ class Song
    
     song = self.new(song_info[1])
   #  binding.pry 
-    Artist.new(song_info[0])
+    song.artist_name = song_info[0]
     song 
    # binding.pry 
   end
   
-  def self.artist_name=(name)
+  def artist_name=(name)
     self.artist = Artist.find_or_create_by_name(name)
+    artist.add_song(self)
+  end
   
 end
